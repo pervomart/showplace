@@ -19,9 +19,9 @@ const Persik = props => (
 				{osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
 			</PanelHeaderButton>}
 		>
-			Persik
+			Этот котяра доволен собой
 		</PanelHeader>
-		<img className="Persik" src={persik} alt="Persik The Cat"/>
+		<img className="Persik" src={persik} alt="Кот Обормот"/>
 	</Panel>
 );
 

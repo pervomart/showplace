@@ -22,6 +22,7 @@ const App = () => {
 		});
 		async function fetchData() {
 			const user = await bridge.send('VKWebAppGetUserInfo');
+			const location = await bridge.send("VKWebAppGetGeodata", {});
 			setUser(user);
 			setPopout(null);
 		}
