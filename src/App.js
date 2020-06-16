@@ -23,10 +23,16 @@ const App = () => {
 		});
 		async function fetchData() {
 			const user = await bridge.send('VKWebAppGetUserInfo');
-			const location = await bridge.send("VKWebAppGetGeodata", {});
+			var location = await bridge.send("VKWebAppGetGeodata", {});
 			setUser(user);
 			setGeo(location);
 			setPopout(null);
+			setInterval(
+				function(){
+					location = await bridge.send("VKWebAppGetGeodata", {});
+					setGeo(location);
+				}, 5000
+			);
 		}
 		fetchData();
 	}, []);
