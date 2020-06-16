@@ -21,10 +21,17 @@ const Home = ({ id, go, fetchedUser }) => (
 			</Cell>
 		</Group>}
 
+		{fetchedGeo &&
+		<Group title="Мы вычислили, где ты находишься.">
+			<Cell>
+				{`${fetchedGeo.lat} ${fetchedGeo.long}`}
+			</Cell>
+		</Group>}
+
 		<Group title="Навигация">
 			<Div>
 				<Button size="xl" level="2" onClick={go} data-to="persik">
-					Покажите мне котика.
+					Покажите мне мост.
 				</Button>
 			</Div>
 		</Group>
@@ -42,6 +49,11 @@ Home.propTypes = {
 			title: PropTypes.string,
 		}),
 	}),
+	fetchedGeo: PropTypes.shape({
+		lat: PropTypes.string,
+		long: PropTypes.string,
+	}),
+
 };
 
 export default Home;

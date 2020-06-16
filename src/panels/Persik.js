@@ -7,7 +7,7 @@ import PanelHeaderButton from '@vkontakte/vkui/dist/components/PanelHeaderButton
 import Icon28ChevronBack from '@vkontakte/icons/dist/28/chevron_back';
 import Icon24Back from '@vkontakte/icons/dist/24/back';
 
-import persik from '../img/persik.png';
+import bridge from '../img/bridge.jpg';
 import './Persik.css';
 
 const osName = platform();
@@ -19,9 +19,9 @@ const Persik = props => (
 				{osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
 			</PanelHeaderButton>}
 		>
-			Этот котяра доволен собой
+			Мост Белелюбского в г.Боровичи
 		</PanelHeader>
-		<img className="Persik" src={persik} alt="Кот Обормот"/>
+		<img className="image" src={bridge} alt="Мост Белелюбского в г.Боровичи"/>
 	</Panel>
 );
 
