@@ -10,6 +10,7 @@ import Persik from './panels/Persik';
 const App = () => {
 	const [activePanel, setActivePanel] = useState('home');
 	const [fetchedUser, setUser] = useState(null);
+	const [fetchedGeo, setGeo] = useState(null);
 	const [popout, setPopout] = useState(<ScreenSpinner size='large' />);
 
 	useEffect(() => {
@@ -24,6 +25,7 @@ const App = () => {
 			const user = await bridge.send('VKWebAppGetUserInfo');
 			const location = await bridge.send("VKWebAppGetGeodata", {});
 			setUser(user);
+			setGeo(location);
 			setPopout(null);
 		}
 		fetchData();
@@ -35,7 +37,7 @@ const App = () => {
 
 	return (
 		<View activePanel={activePanel} popout={popout}>
-			<Home id='home' fetchedUser={fetchedUser} go={go} />
+			<Home id='home' fetchedUser={fetchedUser} fetchedGeo={fetchedGeo} go={go} />
 			<Persik id='persik' go={go} />
 		</View>
 	);
