@@ -28,8 +28,8 @@ const App = () => {
 			setGeo(location);
 			setPopout(null);
 			setInterval(
-				function(){
-					location = bridge.send("VKWebAppGetGeodata", {});
+				async function(){
+					location = await bridge.send("VKWebAppGetGeodata", {});
 					setGeo(location);
 				}, 5000
 			);
