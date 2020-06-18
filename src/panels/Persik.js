@@ -22,6 +22,7 @@ const Persik = props => (
 			Мост Белелюбского в г.Боровичи
 		</PanelHeader>
 		<img className="image" src={bridge} alt="Мост Белелюбского в г.Боровичи"/>
+		<Div>Это мост в центре г.Боровичи</Div>
 	</Panel>
 );
 
