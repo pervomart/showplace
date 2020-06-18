@@ -10,7 +10,7 @@ import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
 
 const Home = ({ id, go, fetchedUser, fetchedGeo }) => (
 	<Panel id={id}>
-		<PanelHeader>Достопримечательности</PanelHeader>
+		<PanelHeader>Моё местоположение</PanelHeader>
 		{fetchedUser &&
 		<Group title="Кто у нас тут путешествует?">
 			<Cell
@@ -27,14 +27,9 @@ const Home = ({ id, go, fetchedUser, fetchedGeo }) => (
 				{`${fetchedGeo.lat} ${fetchedGeo.long}`}
 			</Cell>
 		</Group>}
-
-		<Group title="Навигация">
-			<Div>
-				<Button size="xl" level="2" onClick={go} data-to="persik">
-					Покажите мне мост.
-				</Button>
-			</Div>
-		</Group>
+		<Div>
+			Это твои координаты
+		</Div>
 	</Panel>
 );
 

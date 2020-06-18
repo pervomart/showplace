@@ -4,11 +4,11 @@ import View from '@vkontakte/vkui/dist/components/View/View';
 import ScreenSpinner from '@vkontakte/vkui/dist/components/ScreenSpinner/ScreenSpinner';
 import '@vkontakte/vkui/dist/vkui.css';
 
+import Main from './panels/Main';
 import Home from './panels/Home';
-import Persik from './panels/Persik';
 
 const App = () => {
-	const [activePanel, setActivePanel] = useState('home');
+	const [activePanel, setActivePanel] = useState('main');
 	const [fetchedUser, setUser] = useState(null);
 	const [fetchedGeo, setGeo] = useState(null);
 	const [popout, setPopout] = useState(<ScreenSpinner size='large' />);
@@ -43,8 +43,8 @@ const App = () => {
 
 	return (
 		<View activePanel={activePanel} popout={popout}>
+			<Main id='main' go={go} />
 			<Home id='home' fetchedUser={fetchedUser} fetchedGeo={fetchedGeo} go={go} />
-			<Persik id='persik' go={go} />
 		</View>
 	);
 }
