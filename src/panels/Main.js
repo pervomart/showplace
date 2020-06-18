@@ -13,7 +13,7 @@ import './css/Main.css';
 
 const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
 	<Panel id={id}>
-		<PanelHeader separator="hide">Чёздесь?! Гдея?!</PanelHeader>
+		<PanelHeader separator="hide">Чёздесь&Гдея?!</PanelHeader>
         <CardScroll>
             <Card size="m">
                 <div class="topcard c1" style={{ width: 259, height: 152 }}>Первый</div>
