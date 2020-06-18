@@ -8,13 +8,12 @@ import Card from '@vkontakte/vkui/dist/components/Card/Card';
 import CardScroll from '@vkontakte/vkui/dist/components/CardScroll/CardScroll';
 import Cell from '@vkontakte/vkui/dist/components/Cell/Cell';
 import Div from '@vkontakte/vkui/dist/components/Div/Div';
-import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
 
 import './css/Main.css';
 
 const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
 	<Panel id={id}>
-		<PanelHeader>Чтоздесь?!</PanelHeader>
+		<PanelHeader separator="hide">Чёздесь?! Гдея?!</PanelHeader>
         <CardScroll>
             <Card size="m">
                 <div class="topcard c1" style={{ width: 259, height: 152 }}>Первый</div>
@@ -36,7 +35,7 @@ const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
 
 Main.propTypes = {
 	id: PropTypes.string.isRequired,
-	go: PropTypes.func.isRequired,
+    go: PropTypes.func.isRequired,
 };
 
 export default Main;
