@@ -1,6 +1,5 @@
 
 .topcard {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(.jpg);
     background-size: cover;
     border: 0.33px solid rgba(0, 0, 0, 0.08);
     box-sizing: border-box;
