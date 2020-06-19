@@ -38,7 +38,7 @@ const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
 			</Div>
 		</Group>
 	</Panel>
-);=
+);
 
 Main.propTypes = {
 	id: PropTypes.string.isRequired,
