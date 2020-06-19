@@ -21,12 +21,15 @@ const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
             <Card size="m">
                 <div class="topcard c2" style={{ width: 259, height: 152 }}> </div>
             </Card>
+            <Card size="m">
+                <div class="topcard c5" style={{ width: 259, height: 152 }}> </div>
+            </Card>
         </CardScroll>
 
 
         <Group title="Страна">
      <Div>
-		<button class="country c3"onClick={go} data-to="Main">
+		<button class="country c3" onClick={go} data-to="Main">
 
 		</button>
      </Div>
