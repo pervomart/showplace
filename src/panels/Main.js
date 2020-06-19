@@ -26,7 +26,7 @@ const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
 
         <Group title="Страна">
      <Div>
-       <div class="c3"> </div>
+       <div class="c3"><button></button></div>
      </Div>
      <Div>
        <div class="c4"> </div>
