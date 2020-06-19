@@ -45,7 +45,7 @@ const App = () => {
 		<View activePanel={activePanel} popout={popout}>
 			<Main id='main' go={go} />
 			<Home id='home' fetchedUser={fetchedUser} fetchedGeo={fetchedGeo} go={go} />
-			<City id='City' go={go} />
+
 		</View>
 	);
 }
