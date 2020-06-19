@@ -8,6 +8,8 @@ import Card from '@vkontakte/vkui/dist/components/Card/Card';
 import CardScroll from '@vkontakte/vkui/dist/components/CardScroll/CardScroll';
 import Cell from '@vkontakte/vkui/dist/components/Cell/Cell';
 import Div from '@vkontakte/vkui/dist/components/Div/Div';
+import View from '@vkontakte/vkui/dist/components/View/View';
+import CellButton from '@vkontakte/vkui/dist/components/CellButton/CellButton';
 
 import './css/Main.css';
 
