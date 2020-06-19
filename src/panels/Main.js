@@ -9,6 +9,7 @@ import CardScroll from '@vkontakte/vkui/dist/components/CardScroll/CardScroll';
 import Cell from '@vkontakte/vkui/dist/components/Cell/Cell';
 import Div from '@vkontakte/vkui/dist/components/Div/Div';
 import { Root, View } from '@vkontakte/vkui';
+import CellButton from'@vkontakte/vkui/dist/components/CellButton/CellButton';
 
 import './css/Main.css';
 
@@ -50,7 +51,7 @@ const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
         </View>
       </Root>
 
-<Example />
+
   		</Group>
 
 		<Group title="Навигация">
