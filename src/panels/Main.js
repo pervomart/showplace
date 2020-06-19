@@ -23,12 +23,12 @@ const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
             </Card>
         </CardScroll>
 
-        <Group header={<Header mode="secondary">Типы кнопок</Header>}>
+
+        <Group title="Страна">
      <Div>
        <Button>Россия</Button>
      </Div>
   		</Group>
-
 
 		<Group title="Навигация">
 			<Div>
