@@ -16,17 +16,17 @@ const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
 		<PanelHeader separator="hide">iЧтоЗдесь</PanelHeader>
         <CardScroll>
             <Card size="m">
-                <div class="topcard c1" style={{ width: 259, height: 152 }}>Первый</div>
+                <div class="topcard c1" style={{ width: 259, height: 152 }}> </div>
             </Card>
             <Card size="m">
-                <div class="topcard c2" style={{ width: 259, height: 152 }}>Второй</div>
+                <div class="topcard c2" style={{ width: 259, height: 152 }}> </div>
             </Card>
         </CardScroll>
 
 
         <Group title="Страна">
      <Div>
-       <div class="c3">Первый</div>
+       <div class="c3"> </div>
      </Div>
   		</Group>
 
