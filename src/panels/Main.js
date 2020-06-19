@@ -23,6 +23,13 @@ const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
             </Card>
         </CardScroll>
 
+        <Group header={<Header mode="secondary">Типы кнопок</Header>}>
+     <Div>
+       <Button>Россия</Button>
+     </Div>
+  		</Group>
+
+
 		<Group title="Навигация">
 			<Div>
 				<Button size="xl" level="2" onClick={go} data-to="home">
@@ -31,7 +38,7 @@ const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
 			</Div>
 		</Group>
 	</Panel>
-);
+);=
 
 Main.propTypes = {
 	id: PropTypes.string.isRequired,
