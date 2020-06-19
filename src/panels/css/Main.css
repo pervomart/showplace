@@ -16,12 +16,15 @@
 
 .c3 {
     background-image: url(../../img/ros1.png);
-    width: 351px;
-    height: 324px;
+
    }
 
    .c4 {
     background-image: url(../../img/amer.png);
-    width: 351px;
-    height: 324px;
+   
    }
+
+.city{
+	width: 350px;
+    height: 324px;
+}
