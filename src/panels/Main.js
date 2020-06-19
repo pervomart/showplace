@@ -26,7 +26,7 @@ const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
 
         <Group title="Страна">
      <Div>
-       <div class="c3" style={{ width: 259, height: 152 }}>Первый</div>
+       <div class="c3">Первый</div>
      </Div>
   		</Group>
 
