@@ -26,7 +26,9 @@ const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
 
         <Group title="Страна">
      <Div>
-       <Button class="Ros"><img src="../../img/ros.png"></Button>
+       <Button class="Ros">
+       	<img src="../../img/ros.png">
+       </Button>
      </Div>
   		</Group>
 
