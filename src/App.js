@@ -6,6 +6,7 @@ import '@vkontakte/vkui/dist/vkui.css';
 
 import Main from './panels/Main';
 import Home from './panels/Home';
+import City from './panels/City';
 
 const App = () => {
 	const [activePanel, setActivePanel] = useState('main');
