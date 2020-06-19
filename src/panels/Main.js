@@ -27,10 +27,7 @@ const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
 
         <Group title="Страна">
     
-    
 
-  render() {
-    return (
       <Root activeView={this.state.activeView}>
         <View activePanel="panel1.1" id="view1">
           <Panel id="panel1.1">
@@ -52,9 +49,6 @@ const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
           </Panel>
         </View>
       </Root>
-    )
-  }
-}
 
 <Example />
   		</Group>
