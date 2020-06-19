@@ -8,6 +8,7 @@ import Card from '@vkontakte/vkui/dist/components/Card/Card';
 import CardScroll from '@vkontakte/vkui/dist/components/CardScroll/CardScroll';
 import Cell from '@vkontakte/vkui/dist/components/Cell/Cell';
 import Div from '@vkontakte/vkui/dist/components/Div/Div';
+import { Root, View } from '@vkontakte/vkui';
 
 import './css/Main.css';
 
@@ -25,16 +26,43 @@ const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
 
 
         <Group title="Страна">
-     <Div>
+     class Example extends React.Component {
+  constructor(props) {
+    super(props);
 
-       			<button class="city c3"onClick={go} data-to="#">
-					
-				</button>
+    this.state = {
+      activeView: 'view1'
+    }
+  }
 
-     </Div>
-     <Div>
-       <div class="city c4"> </div>
-     </Div>
+  render() {
+    return (
+      <Root activeView={this.state.activeView}>
+        <View activePanel="panel1.1" id="view1">
+          <Panel id="panel1.1">
+            <Group>
+              <CellButton class="c3 country" onClick={ () => this.setState({ activeView: 'view2' }) }>
+                
+              </CellButton>
+            </Group>
+          </Panel>
+        </View>
+        <View header activePanel="panel2.1" id="view2">
+          <Panel id="panel2.1">
+            <PanelHeader>Город</PanelHeader>
+            <Group>
+              <CellButton onClick={ () => this.setState({ activeView: 'view1' }) }>
+                Back
+              </CellButton>
+            </Group>
+          </Panel>
+        </View>
+      </Root>
+    )
+  }
+}
+
+<Example />
   		</Group>
 
 		<Group title="Навигация">
