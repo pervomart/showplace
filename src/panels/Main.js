@@ -26,9 +26,7 @@ const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
 
         <Group title="Страна">
      <Div>
-       <button class="btn btn-medium">
-    		<i class="icon-excel" ></i>Текст
-		</button>
+       <input type="submit" style="background-image: url(../../img/ros.png);" />
      </Div>
   		</Group>
 
