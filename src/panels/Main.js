@@ -26,14 +26,8 @@ const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
 
 
         <Group title="Страна">
-     class Example extends React.Component {
-constructor(props) {
-    super(props);
-
-    this.state = {
-      activeView: 'view1'
-    }
-}
+    
+    
 
   render() {
     return (
