@@ -31,7 +31,26 @@ const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
 		</button>
      </Div>
      <Div>
-       <div class="country c4"> </div>
+       <View activePanel="panel1.1" id="view1">
+          <Panel id="panel1.1">
+            <PanelHeader>View 1</PanelHeader>
+            <Group>
+              <CellButton onClick={ () => this.setState({ activeView: 'view2' }) }>
+                Open View 2
+              </CellButton>
+            </Group>
+          </Panel>
+        </View>
+        <View header activePanel="panel2.1" id="view2">
+          <Panel id="panel2.1">
+            <PanelHeader>View 2</PanelHeader>
+            <Group>
+              <CellButton onClick={ () => this.setState({ activeView: 'view1' }) }>
+                Back to View 1
+              </CellButton>
+            </Group>
+          </Panel>
+        </View>
      </Div>
   		</Group>
 
