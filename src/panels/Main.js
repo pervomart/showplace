@@ -27,9 +27,9 @@ const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
         <Group title="Страна">
      <Div>
 
-       			<Button class="city c3" size="xl" level="2" onClick={go} data-to="#">
+       			<button class="city c3"onClick={go} data-to="#">
 					
-				</Button>
+				</button>
 
      </Div>
      <Div>
