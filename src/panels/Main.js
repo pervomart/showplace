@@ -26,9 +26,9 @@ const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
 
         <Group title="Страна">
      <Div>
-       <Button class="Ros">
-       	<i class="icon-excel" ></i>
-       </Button>
+       <button class="btn btn-medium">
+    		<i class="icon-excel" ></i>Текст
+		</button>
      </Div>
   		</Group>
 
