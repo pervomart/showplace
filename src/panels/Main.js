@@ -26,7 +26,9 @@ const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
 
         <Group title="Страна">
      <Div>
-       <input type="submit" style="background-image: url(../../img/ros.png);" />
+       <Button class="Ros">
+       	<div class="c3" style={{ width: 259, height: 152 }}>Первый</div>
+       </Button>
      </Div>
   		</Group>
 
