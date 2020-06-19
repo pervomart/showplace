@@ -8,8 +8,6 @@ import Card from '@vkontakte/vkui/dist/components/Card/Card';
 import CardScroll from '@vkontakte/vkui/dist/components/CardScroll/CardScroll';
 import Cell from '@vkontakte/vkui/dist/components/Cell/Cell';
 import Div from '@vkontakte/vkui/dist/components/Div/Div';
-import { Root, View } from '@vkontakte/vkui';
-import CellButton from'@vkontakte/vkui/dist/components/CellButton/CellButton';
 
 import './css/Main.css';
 
@@ -27,31 +25,14 @@ const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
 
 
         <Group title="Страна">
-    
+     <Div>
+		<button class="country c3"onClick={go} data-to="City">
 
-      <Root activeView={this.state.activeView}>
-        <View activePanel="panel1.1" id="view1">
-          <Panel id="panel1.1">
-            <Group>
-              <CellButton class="c3 country" onClick={ () => this.setState({ activeView: 'view2' }) }>
-                
-              </CellButton>
-            </Group>
-          </Panel>
-        </View>
-        <View header activePanel="panel2.1" id="view2">
-          <Panel id="panel2.1">
-            <PanelHeader>Город</PanelHeader>
-            <Group>
-              <CellButton onClick={ () => this.setState({ activeView: 'view1' }) }>
-                Back
-              </CellButton>
-            </Group>
-          </Panel>
-        </View>
-      </Root>
-
-
+		</button>
+     </Div>
+     <Div>
+       <div class="country c4"> </div>
+     </Div>
   		</Group>
 
 		<Group title="Навигация">
