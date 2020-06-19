@@ -28,6 +28,9 @@ const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
      <Div>
        <div class="c3"> </div>
      </Div>
+     <Div>
+       <div class="c4"> </div>
+     </Div>
   		</Group>
 
 		<Group title="Навигация">
