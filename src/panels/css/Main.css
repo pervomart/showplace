@@ -15,7 +15,7 @@
 }
 
 .c3 {
-    background-image: url(../../img/ros1.png);
+    background-image: url(../../img/ros1.png) no repeat;
     width: 351px;
     height: 324px;
    }
