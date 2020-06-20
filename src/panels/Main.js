@@ -8,10 +8,16 @@ import Card from '@vkontakte/vkui/dist/components/Card/Card';
 import CardScroll from '@vkontakte/vkui/dist/components/CardScroll/CardScroll';
 import Cell from '@vkontakte/vkui/dist/components/Cell/Cell';
 import Div from '@vkontakte/vkui/dist/components/Div/Div';
+import View from '@vkontakte/vkui/dist/components/View/View';
+import CellButton from '@vkontakte/vkui/dist/components/CellButton/CellButton';
+
+
 
 import './css/Main.css';
 
 const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
+<View id="view1" activePanel="{id}">
+  
 	<Panel id={id}>
 		<PanelHeader separator="hide">iЧтоЗдесь</PanelHeader>
         <CardScroll>
@@ -25,7 +31,11 @@ const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
                 <div class="topcard c5" style={{ width: 259, height: 152 }}> </div>
             </Card>
         </CardScroll>
-
+<Group>
+              <CellButton onClick={ () => this.setState({ activeView: 'view2' }) }>
+                to View 2
+              </CellButton>
+            </Group>
 
         <Group title="Страна">
      <Div>
@@ -38,6 +48,17 @@ const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
      </Div>
   		</Group>
 	</Panel>
+</View>
+<View id="view2" activePanel="panel1">
+	<Panel id="panel1">
+ <PanelHeader>View 2</PanelHeader>
+            <Group>
+              <CellButton onClick={ () => this.setState({ activeView: 'view1' }) }>
+                Back to View 1
+              </CellButton>
+            </Group>
+	</Panel>
+</View>
 );
 
 Main.propTypes = {
