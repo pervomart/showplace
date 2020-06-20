@@ -46,8 +46,8 @@ const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
 	</Panel>
 </View>
 
-<View header id="view2" activePanel="panel">
-  	
+<View header activePanel="panel" id="view2">
+          
 </View>
 
 );
