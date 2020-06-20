@@ -45,8 +45,9 @@ const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
   		</Group>
 	</Panel>
 </View>
-<View id="view2" activePanel="panel1">
-	<Panel id="panel1">
+
+<View id="view2" activePanel="panel">
+  	<Panel id="panel">
             <Group>
               <CellButton onClick={ () => this.setState({ activeView: 'view1' }) }>
                 Back to View 1
@@ -54,6 +55,7 @@ const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
             </Group>
 	</Panel>
 </View>
+
 );
 
 Main.propTypes = {
