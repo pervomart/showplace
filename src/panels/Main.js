@@ -37,14 +37,6 @@ const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
        <div class="country c4"> </div>
      </Div>
   		</Group>
-
-		<Group title="Навигация">
-			<Div>
-				<Button size="xl" level="2" onClick={go} data-to="home">
-					Моё местоположение
-				</Button>
-			</Div>
-		</Group>
 	</Panel>
 );
 
