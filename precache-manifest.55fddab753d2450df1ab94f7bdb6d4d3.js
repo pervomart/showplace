@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b5f8e0d1682727e6dfb0127533d641da",
+    "revision": "f9539a6ca3d49ac1626138ecf3f29309",
     "url": "/showplace/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/showplace/static/css/2.86df01db.chunk.css"
   },
   {
-    "revision": "235c29f3cd60bdc6ffb5",
-    "url": "/showplace/static/css/main.6cc9e37f.chunk.css"
+    "revision": "4b9c3a65a52cb6afca8a",
+    "url": "/showplace/static/css/main.44290520.chunk.css"
   },
   {
     "revision": "8f545852830ba7db14a9",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/showplace/static/js/2.c91d6b88.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "235c29f3cd60bdc6ffb5",
+    "revision": "4b9c3a65a52cb6afca8a",
     "url": "/showplace/static/js/main.25c2d977.chunk.js"
   },
   {
@@ -28,24 +28,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/showplace/static/js/runtime-main.29cb45d0.js"
   },
   {
-    "revision": "5ad2b16677a0e2bc9a9f5be305a5745e",
-    "url": "/showplace/static/media/amer.5ad2b166.png"
+    "revision": "a30d1bf35d1c582183b670e651431472",
+    "url": "/showplace/static/media/amer.a30d1bf3.png"
   },
   {
-    "revision": "106d317f5969b16afc675a6c6576e7c0",
-    "url": "/showplace/static/media/china.106d317f.png"
+    "revision": "289aad6922d91a696e30cbf780902edc",
+    "url": "/showplace/static/media/china.289aad69.png"
   },
   {
     "revision": "b9bbba5ab89050c248d73d6ff324f99b",
     "url": "/showplace/static/media/cs.b9bbba5a.png"
   },
   {
-    "revision": "3295ad02c4d6ace48dd6bf2ae938bff7",
-    "url": "/showplace/static/media/evro.3295ad02.png"
+    "revision": "f54dc93374c62d27222b0cb9da29c99c",
+    "url": "/showplace/static/media/evro.f54dc933.png"
   },
   {
-    "revision": "0f380f2560c0e0a13b954da1e6791ad8",
-    "url": "/showplace/static/media/ros1.0f380f25.png"
+    "revision": "d6d84e119984fdeeadcbc71b6b3964ec",
+    "url": "/showplace/static/media/ros1.d6d84e11.png"
   },
   {
     "revision": "098e2edf590c6df6489141298c4637af",
