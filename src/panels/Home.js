@@ -28,15 +28,7 @@ const Home = props => (
 		>
 			GeoUT
 		</PanelHeader>
-		{props.fetchedUser &&
-		<Group title="Кто у нас тут путешествует?">
-			<Cell
-				before={props.fetchedUser.photo_200 ? <Avatar src={props.fetchedUser.photo_200}/> : null}
-				description={props.fetchedUser.city && props.fetchedUser.city.title ? props.fetchedUser.city.title : ''}
-			>
-				{`${props.fetchedUser.first_name} ${props.fetchedUser.last_name}`}
-			</Cell>
-		</Group>}
+		
 
 		<Div>
 		<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aaac64cefc48edcb322769303ad0b7296f1d9afad68ff7b656d71aa0592e4b49d&amp;source=constructor" width="100%" height="541" frameborder="0"></iframe>
