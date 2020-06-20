@@ -38,6 +38,14 @@ const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
        <div class="country c4"></div>
        
      </Div>
+     <Div>
+       <div class="country c6"></div>
+       
+     </Div>
+     <Div>
+       <div class="country c7"></div>
+       
+     </Div>
   		</Group>
 	</Panel>
 );
