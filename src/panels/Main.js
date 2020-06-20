@@ -14,7 +14,7 @@ import './css/Main.css';
 const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
 	
 	<Panel id={id}>
-		<PanelHeader separator="hide">iЧтоЗдесь</PanelHeader>
+		<PanelHeader separator="hide">GeoUT</PanelHeader>
         <CardScroll>
             <Card size="m">
                 <div class="topcard c1" style={{ width: 259, height: 152 }}> </div>

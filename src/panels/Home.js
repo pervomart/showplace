@@ -26,7 +26,7 @@ const Home = props => (
 				{osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
 			</PanelHeaderButton>}
 		>
-			iЧтоЗдесь
+			GeoUT
 		</PanelHeader>
 		{props.fetchedUser &&
 		<Group title="Кто у нас тут путешествует?">
