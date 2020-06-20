@@ -31,15 +31,11 @@ const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
                 <div class="topcard c5" style={{ width: 259, height: 152 }}> </div>
             </Card>
         </CardScroll>
-<Group>
-              <CellButton onClick={ () => this.setState({ activeView: 'view2' }) }>
-                to View 2
-              </CellButton>
-            </Group>
+
 
         <Group title="Страна">
      <Div>
-		<button class="country c3" onClick={go} data-to="home">
+		<button class="country c3" onClick={ () => this.setState({ activeView: 'view2' }) }>
 
 		</button>
      </Div>
@@ -51,7 +47,6 @@ const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
 </View>
 <View id="view2" activePanel="panel1">
 	<Panel id="panel1">
- 
             <Group>
               <CellButton onClick={ () => this.setState({ activeView: 'view1' }) }>
                 Back to View 1
