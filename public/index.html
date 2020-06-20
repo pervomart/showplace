@@ -6,8 +6,19 @@
 			<meta name="theme-color" content="#000000">
 			<meta content="IE=Edge" http-equiv="X-UA-Compatible">
 			<title>VK Mini App Boilerplate</title>
+			<script src="https://api-maps.yandex.ru/2.1/?apikey=ea50ad29-9811-403d-a5a8-15b37b02be4f&lang=ru_RU" type="text/javascript">
+			</script>
 	</head>
 	<body>
 			<div id="root"></div>
 	</body>
+	<script type="text/javascript">
+        ymaps.ready(init);
+        function init(){
+            var myMap = new ymaps.Map("map", {
+                center: [55.76, 37.64],
+                zoom: 7
+            });
+        }
+    </script>
 </html>

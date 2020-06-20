@@ -12,7 +12,12 @@ import Div from '@vkontakte/vkui/dist/components/Div/Div';
 import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
 
 import { platform, IOS } from '@vkontakte/vkui';
+
+import './css/Home.css';
+
+
 const osName = platform();
+
 
 const Home = props => (
 	<Panel id={props.id}>
@@ -34,7 +39,7 @@ const Home = props => (
 		</Group>}
 
 		<Div>
-		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A238a8393175ae4d7f3f15da54333d43f9a01ddbde552453f63e811a99bda857d&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=true"></script>
+		<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A238a8393175ae4d7f3f15da54333d43f9a01ddbde552453f63e811a99bda857d&amp;source=constructor" width="100%" height="720" frameborder="0"></iframe>
 		</Div>
 	</Panel>
 );

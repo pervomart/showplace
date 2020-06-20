@@ -35,7 +35,8 @@ const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
 		</button>
      </Div>
      <Div>
-       <div class="country c4"> </div>
+       <div class="country c4"></div>
+       <div id="map"></div>
      </Div>
   		</Group>
 	</Panel>
