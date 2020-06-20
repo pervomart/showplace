@@ -51,7 +51,7 @@ const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
 </View>
 <View id="view2" activePanel="panel1">
 	<Panel id="panel1">
- <PanelHeader>View 2</PanelHeader>
+ 
             <Group>
               <CellButton onClick={ () => this.setState({ activeView: 'view1' }) }>
                 Back to View 1
