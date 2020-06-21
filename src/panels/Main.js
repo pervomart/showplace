@@ -30,9 +30,9 @@ const Main = ({ id, go, fetchedUser, fetchedGeo }) => (
 
         <Group title="Страна">
      <Div>
-     
+
 		<button class="country c3" onClick={go} data-to="home">
-кликать сюда
+           <p>кликать сюда</p> 
 		</button>
      </Div>
      <Div>
